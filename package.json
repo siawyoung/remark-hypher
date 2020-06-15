@@ -1,0 +1,38 @@
+{
+  "name": "remark-hypher",
+  "description": "Remark plugin to add hyphenation to Markdown using hypher",
+  "version": "0.0.0-development",
+  "author": "Lau Siaw Young <sy@siawyoung.com>",
+  "bugs": {
+    "url": "https://github.com/siawyoung/remark-hypher/issues"
+  },
+  "dependencies": {
+    "hyphenation.en-us": "^0.2.1",
+    "hypher": "^0.2.5",
+    "unist-util-visit": "^2.0.2"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "remark": "^12.0.0",
+    "semantic-release": "^17.0.8"
+  },
+  "homepage": "https://github.com/siawyoung/remark-hypher",
+  "keywords": [
+    "remark",
+    "hypher",
+    "hyphenation"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siawyoung/remark-hypher.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "yarn test",
+    "publish": "semantic-release",
+    "semantic-release": "semantic-release"
+  }
+}
